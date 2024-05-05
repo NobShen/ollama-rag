@@ -17,7 +17,10 @@ deactivate
 
 ##### Step 2: Install Dependencies using Pip
 
+Clone the repository to venv created above.
+
 ```bash
+git clone 
 pip install -r requirements.txt
 ```
 
