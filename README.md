@@ -6,6 +6,15 @@ This project aims to enhance document search and retrieval processes, ensuring p
 
 ##### Step 1: Setup a Virtual Env
 
+Python 3.10.12 is pre-installed on Ubuntu 22.04.  So cd to the directory where the new virtual environment is to be created.  Deactivate after use.
+
+```bash
+python3 -m venv venv
+cd venv/bin
+source activate
+deactivate
+```
+
 ##### Step 2: Install Dependencies using Pip
 
 ```bash
