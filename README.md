@@ -20,6 +20,7 @@ deactivate
 Clone the repository to venv created above.
 
 ```bash
+sudo apt install python3-pip
 git clone https://github.com/NobShen/ollama-rag.git
 cd ollama-rag
 pip install -r requirements.txt
@@ -60,9 +61,7 @@ Supported file types:
 ##### Step 5: Ingest Documents to Store in Vector Database for Query
 
 ```bash
-pip install tqdm
-pip install langchain-community
-python ingest.py
+python3 ingest.py
 ```
 
 ##### Step 6: Chat using PrivateGPT
