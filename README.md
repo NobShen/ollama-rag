@@ -20,13 +20,17 @@ deactivate
 Clone the repository to venv created above.
 
 ```bash
-git clone 
+git clone https://github.com/NobShen/ollama-rag.git
+cd ollama-rag
 pip install -r requirements.txt
 ```
 
 ##### Step 3: Ensure Ollama and Mistral is installed
 
+Install ollama if you haven't already.  Then pull mistral model.
+
 ```bash
+curl -fsSL https://ollama.com/install.sh | sh
 ollama pull mistral
 ```
 
@@ -56,6 +60,8 @@ Supported file types:
 ##### Step 5: Ingest Documents to Store in Vector Database for Query
 
 ```bash
+pip install tqdm
+pip install langchain-community
 python ingest.py
 ```
 
