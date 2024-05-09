@@ -35,6 +35,17 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama pull mistral
 ```
 
+Now you can look at ollama's vector database and see what it contains:
+
+```bash
+curl curl http://localhost:11434/api/embeddings -d '{
+  "model": "mxbai-embed-large",
+  "prompt": "Llamas are members of the camelid family"
+}'
+```
+
+For a more detail look at where ollama stores the models, check out this issue:  https://github.com/ollama/ollama/issues/1737
+
 ##### Step 4: Create `source_documents` Folder and Add your Documents
 
 ```bash
