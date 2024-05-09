@@ -26,7 +26,7 @@ cd ollama-rag
 pip install -r requirements.txt
 ```
 
-##### Step 3: Ensure Ollama and Mistral is installed
+##### Step 3: Ensure Ollama and Mistral are installed
 
 Install ollama if you haven't already.  Then pull mistral model.
 
