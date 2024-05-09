@@ -77,3 +77,17 @@ To use a different model try
 ollama pull llama2:13b
 MODEL=llama2:13b python privateGPT.py
 ```
+
+##### Step 7: Clean up ollama memory to ingest new data
+
+```bash
+python privateGPT.py
+```
+
+To use a different model try
+
+
+```bash
+ollama pull llama2:13b
+MODEL=llama2:13b python privateGPT.py
+```
