@@ -39,7 +39,7 @@ Now you can look at ollama's vector database and see what it contains:
 
 ```bash
 curl curl http://localhost:11434/api/embeddings -d '{
-  "model": "mxbai-embed-large",
+  "model": "mistral",
   "prompt": "Llamas are members of the camelid family"
 }'
 ```
