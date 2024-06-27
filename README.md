@@ -44,17 +44,17 @@ ollama pull mistral
 Now you can look at ollama's vector database and see what it contains:
 
 ```bash
-curl curl http://localhost:11434/api/embeddings -d '{
+curl http://localhost:11434/api/embeddings -d '{
   "model": "mistral",
   "prompt": "Llamas are members of the camelid family"
 }'
 ```
-You can pipe the output to a file such as out.csv and count how many items are in the output.csv file
+You can pipe the output to a file such as out.csv and count how many items are in the mistral.csv file
 
 ```bash
-awk -F, '{print NF}' out.csv | wc -l
+awk -F, '{print NF}' mistral.csv | wc -l
 ```
-There are 4096 items in the mistral database.
+There are 4096 items in the mistral database.  Do the same for other models to find out.
 
 For a more detail look at where ollama stores the models, check out this issue:  https://github.com/ollama/ollama/issues/1737
 
