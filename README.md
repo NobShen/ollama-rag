@@ -28,7 +28,13 @@ pip install -r requirements.txt
 
 ##### Step 3: Ensure Ollama and Mistral are installed
 
-Install ollama if you haven't already.  Then pull mistral model.
+Install ollama if you haven't already.  Head over to https://ollama.com/download
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
+
+Then pull mistral model.
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
