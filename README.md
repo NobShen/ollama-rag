@@ -49,6 +49,12 @@ curl curl http://localhost:11434/api/embeddings -d '{
   "prompt": "Llamas are members of the camelid family"
 }'
 ```
+You can pipe the output to a file such as out.csv and count how many items are in the output.csv file
+
+```bash
+awk -F, '{print NF}' out.csv | wc -l
+```
+There are 4096 items in the mistral database.
 
 For a more detail look at where ollama stores the models, check out this issue:  https://github.com/ollama/ollama/issues/1737
 
